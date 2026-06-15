@@ -1,0 +1,24 @@
+@startuml
+class UserAccount
+class Pet
+class Clinic
+class Veterinarian
+class ClinicService
+class Appointment
+class MedicalRecord
+class MobileProfessional
+class MobileService
+class MobileAvailability
+class MobileRequest
+class MobileAppointment
+
+UserAccount "1" --> "many" Pet : owns
+Clinic "1" --> "many" Veterinarian
+Clinic "1" --> "many" ClinicService
+Pet "1" --> "many" Appointment
+Pet "1" --> "many" MedicalRecord
+MobileProfessional "1" --> "many" MobileService
+MobileProfessional "1" --> "many" MobileAvailability
+MobileProfessional "1" --> "many" MobileRequest
+MobileProfessional "1" --> "many" MobileAppointment
+@enduml
